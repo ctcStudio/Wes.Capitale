@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/layout_navigation_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/navigation_back"
+            style="@style/Navigation_Button"
+            android:src="@drawable/ic_navigation_back_white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/navigation_info"
+            style="@style/Navigation_Button"
+            android:src="@drawable/ic_navigation_info_white" />
+
+        <ImageView
+            android:id="@+id/navigation_home"
+            style="@style/Navigation_Button"
+            android:src="@drawable/ic_navigation_home_white" />
+
+        <ImageView
+            android:id="@+id/navigation_sound"
+            style="@style/Navigation_Button"
+            android:src="@drawable/ic_navigation_sound_on_white" />
+    </LinearLayout>
+</merge>

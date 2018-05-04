@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Button_360">
+        <item>@drawable/button_menu_yellow</item>
+        <item>8dp</item>
+        <item>4dp</item>
+        <item>4dp</item>
+        <item>4dp</item>
+        <item>48dp</item>
+        <item>0dp</item>
+        <item>1.0</item>
+        <item>onClick</item>
+    </style>
+    <style name="Button_360_NoiThat">
+        <item>-2</item>
+        <item>-1</item>
+        <item>true</item>
+        <item>onClick</item>
+    </style>
+    <style name="Button_Home_Image">
+        <item>-2</item>
+        <item>-2</item>
+        <item>@drawable/button_home</item>
+    </style>
+    <style name="Button_Home_Layout">
+        <item>5</item>
+        <item>true</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>6dp</item>
+        <item>6dp</item>
+        <item>onClick</item>
+    </style>
+    <style name="Button_Home_Text">
+        <item>@dimen/home_button_text_size</item>
+        <item>1</item>
+        <item>@drawable/button_home_text</item>
+        <item>15</item>
+        <item>-2</item>
+        <item>-2</item>
+        <item>16dp</item>
+        <item>4</item>
+    </style>
+    <style name="Button_MatBangCanHo">
+        <item>11</item>
+        <item>1</item>
+        <item>@drawable/button_menu_yellow</item>
+        <item>10dp</item>
+        <item>10dp</item>
+        <item>true</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>onClick</item>
+    </style>
+    <style name="Button_MatBangChonCan">
+        <item>11</item>
+        <item>1</item>
+        <item>@drawable/button_menu_yellow</item>
+        <item>true</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>3dp</item>
+        <item>3dp</item>
+        <item>onClick</item>
+    </style>
+    <style name="Button_MatBangTangDienHinh">
+        <item>11</item>
+        <item>1</item>
+        <item>@drawable/button_menu_yellow</item>
+        <item>22dp</item>
+        <item>22dp</item>
+        <item>true</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>onClick</item>
+    </style>
+
+</resources>

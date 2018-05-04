@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/matbangtangdienhinh_background">
+
+    <ImageView
+        android:id="@+id/matbangcanho_header"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_heightPercent="11.574%"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_header" />
+
+    <ImageView
+        android:id="@+id/matbangcanho_text"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@+id/matbangcanho_header"
+        android:layout_alignTop="@+id/matbangcanho_header"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:src="@drawable/matbangcanho_title_2phongngu" />
+
+    <LinearLayout
+        android:id="@+id/matbangcanho_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_footer"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/matbangcanho_button_phongkhachbep"
+            style="@style/Button_MatBangCanHo"
+            android:src="@drawable/matbangcanho_textbutton_xem" />
+    </LinearLayout>
+
+    <vn.app.vinhomesmetropolis.view.TouchImageView
+        android:id="@+id/matbangcanho_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/matbangcanho_footer"
+        android:layout_below="@+id/matbangcanho_header"
+        android:scaleType="fitCenter"
+        android:src="@drawable/matbangcanho_map_c1_ch1phongngu" />
+
+    <ImageView
+        android:id="@+id/matbangcanho_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/matbangcanho_footer"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/matbangcanho_detail_c1_ch2phongngu" />
+
+    <include
+        layout="@layout/layout_navigation_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/matbangcanho_header"
+        android:layout_alignTop="@+id/matbangcanho_header" />
+</android.support.percent.PercentRelativeLayout>

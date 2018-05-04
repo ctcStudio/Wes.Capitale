@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_widthPercent="5.79%"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/button_tienich"
+                style="@style/BanDoDuAn_Button"
+                android:src="@drawable/bandoduan_textbutton_tienich" />
+        </LinearLayout>
+
+        <View style="@style/BanDoDuAn_Divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/button_cacholancan"
+                style="@style/BanDoDuAn_Button"
+                android:src="@drawable/bandoduan_textbutton_hocongvien" />
+        </LinearLayout>
+
+        <View style="@style/BanDoDuAn_Divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/button_giaothong"
+                style="@style/BanDoDuAn_Button"
+                android:src="@drawable/bandoduan_textbutton_giaothong" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

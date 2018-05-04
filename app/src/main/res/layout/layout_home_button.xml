@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="@dimen/home_layout_button_margin_bottom"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/button_home_phim"
+        style="@style/Button_Home_Layout">
+
+        <ImageView style="@style/Button_Home_Image" />
+
+        <TextView
+            style="@style/Button_Home_Text"
+            android:text="@string/button_home_film" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_home_bando"
+        style="@style/Button_Home_Layout">
+
+        <ImageView style="@style/Button_Home_Image" />
+
+        <TextView
+            style="@style/Button_Home_Text"
+            android:text="@string/button_home_map" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_home_360"
+        style="@style/Button_Home_Layout">
+
+        <ImageView style="@style/Button_Home_Image" />
+
+        <TextView
+            style="@style/Button_Home_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_home_360" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_home_canho"
+        style="@style/Button_Home_Layout">
+
+        <ImageView style="@style/Button_Home_Image" />
+
+        <TextView
+            style="@style/Button_Home_Text"
+            android:text="@string/button_home_khoicanho" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/button_home_matbang"
+        style="@style/Button_Home_Layout">
+
+        <ImageView style="@style/Button_Home_Image" />
+
+        <TextView
+            style="@style/Button_Home_Text"
+            android:text="@string/button_home_matbang" />
+    </FrameLayout>
+</LinearLayout>

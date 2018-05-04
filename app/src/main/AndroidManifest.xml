@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.app.dcapitale">
+
+    <supports-screens android:largeScreens="true" />
+    <supports-screens android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="vn.app.vinhomesmetropolis.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name="vn.app.vinhomesmetropolis.HomeActivity"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vn.app.vinhomesmetropolis.VideoActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="vn.app.vinhomesmetropolis.BanDoDuAnActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="vn.app.vinhomesmetropolis.VirtualTourActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="vn.app.vinhomesmetropolis.KhoiCanHoActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="vn.app.vinhomesmetropolis.MatBangChonCanActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="vn.app.vinhomesmetropolis.MatBangTangDienHinhActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="vn.app.vinhomesmetropolis.MatBangCanHoDienHinhActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="vn.app.vinhomesmetropolis.CreditActivity"
+            android:screenOrientation="sensorLandscape" />
+
+        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+        <service
+            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+            android:process=":filedownloader" />
+    </application>
+
+</manifest>

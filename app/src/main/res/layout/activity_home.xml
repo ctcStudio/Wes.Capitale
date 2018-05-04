@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_widthPercent="25.6%"
+        android:background="@color/colorPrimary">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_heightPercent="32.4%"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/home_logo_slogan" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <vn.app.vinhomesmetropolis.ResizableImageView
+            android:id="@+id/logo_diamond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_logo"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/home_background_diamond" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/logo_diamond"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+
+            <include layout="@layout/layout_home_button" />
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+    <vn.app.vinhomesmetropolis.ResizableImageView
+        android:id="@+id/resizableImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/layout_main"
+        android:layout_toStartOf="@+id/layout_main"
+        android:src="@drawable/home_background" />
+
+    <include
+        layout="@layout/layout_navigation_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.percent.PercentRelativeLayout>

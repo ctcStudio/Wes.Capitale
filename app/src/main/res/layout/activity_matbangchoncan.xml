@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/matbangchoncan_background">
+
+    <ImageView
+        android:id="@+id/matbangcanho_header"
+        android:layout_width="match_parent"
+        android:layout_heightPercent="11.574%"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_header" />
+
+    <ImageView
+        android:id="@+id/matbangchoncan_text"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@+id/matbangcanho_header"
+        android:layout_alignTop="@+id/matbangcanho_header"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:src="@drawable/matbangchoncan_title" />
+
+    <LinearLayout
+        android:id="@+id/matbangcanho_footer"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_heightPercent="6.02%"
+        android:background="@drawable/background_footer"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/button_c1"
+            style="@style/Button_MatBangChonCan"
+            android:src="@drawable/matbangchoncan_text_button_c1" />
+
+        <ImageView
+            android:id="@+id/button_c2"
+            style="@style/Button_MatBangChonCan"
+            android:clickable="false"
+            android:src="@drawable/matbangchoncan_text_button_c2" />
+
+        <ImageView
+            android:id="@+id/button_c3"
+            style="@style/Button_MatBangChonCan"
+            android:src="@drawable/matbangchoncan_text_button_c3" />
+
+        <ImageView
+            android:id="@+id/button_c4"
+            style="@style/Button_MatBangChonCan"
+            android:clickable="false"
+            android:src="@drawable/matbangchoncan_text_button_c5" />
+
+        <ImageView
+            android:id="@+id/button_c6"
+            style="@style/Button_MatBangChonCan"
+            android:src="@drawable/matbangchoncan_text_button_c6" />
+
+        <ImageView
+            android:id="@+id/button_c7"
+            style="@style/Button_MatBangChonCan"
+            android:clickable="false"
+            android:src="@drawable/matbangchoncan_text_button_c7" />
+    </LinearLayout>
+
+    <vn.app.vinhomesmetropolis.ResizableImageView
+        android:id="@+id/matbangchoncan_chieudung"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/matbangcanho_footer"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/matbangcanho_header"
+        android:src="@drawable/background_matbangchoncan_map_chieudung" />
+
+    <vn.app.vinhomesmetropolis.ResizableImageView
+        android:id="@+id/matbangchoncan_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/matbangcanho_footer"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/matbangcanho_header"
+        android:src="@drawable/background_matbangchoncan_map_chieucanh" />
+
+    <include
+        layout="@layout/layout_navigation_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/matbangcanho_header"
+        android:layout_alignTop="@+id/matbangcanho_header" />
+</android.support.percent.PercentRelativeLayout>
